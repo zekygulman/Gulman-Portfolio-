@@ -1,9 +1,6 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite",
-  "installCommand": "npm install",
-  "rewrites": [
-    { "source": "/((?!assets|favicon.ico).*)", "destination": "/index.html" }
-  ]
+  "buildCommand": "npm run generate",
+  "outputDirectory": ".output/public",
+  "framework": "nuxt",
+  "installCommand": "npm install"
 }
