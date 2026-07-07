@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import {
-  ChevronRight,
-  Mail,
-  Linkedin,
-  Github,
-  Instagram,
-} from "lucide-vue-next";
+import { ChevronRight, Mail, Linkedin, Github, Instagram } from "lucide-vue-next";
 
 // ── SEO ──────────────────────────────────────────────────────────────
 useSeoMeta({
@@ -47,8 +41,7 @@ function handleSubmit(e: Event) {
       <div class="p-6 md:p-10">
         <h1 class="font-pixel text-2xl uppercase md:text-4xl">Get in Touch</h1>
         <p class="mt-4 max-w-2xl font-mono-retro text-lg text-ink/80">
-          Have a project, a question, or just want to chat about retro
-          computers? Drop a line.
+          Have a project, a question, or just want to chat about retro computers? Drop a line.
         </p>
       </div>
     </AppWindowTitleBar>
@@ -62,8 +55,8 @@ function handleSubmit(e: Event) {
       <!-- Contact form -->
       <form
         class="border-[3px] border-ink bg-cream p-6 md:p-8"
-        @submit="handleSubmit"
         aria-label="Send a message"
+        @submit="handleSubmit"
       >
         <label class="mb-5 block">
           <span class="mb-2 block font-pixel text-[10px] uppercase">Name</span>
@@ -126,14 +119,10 @@ function handleSubmit(e: Event) {
               class="flex items-center gap-3 border-[3px] border-ink bg-cream px-4 py-3 hover:bg-ink hover:text-white transition-colors"
               :aria-label="social.label"
             >
-              <span
-                class="flex h-7 w-7 items-center justify-center border-[2px] border-current"
-              >
+              <span class="flex h-7 w-7 items-center justify-center border-[2px] border-current">
                 <component :is="social.Icon" class="h-4 w-4" :stroke-width="2" />
               </span>
-              <span class="font-pixel text-[10px] uppercase">{{
-                social.label
-              }}</span>
+              <span class="font-pixel text-[10px] uppercase">{{ social.label }}</span>
             </a>
           </li>
         </ul>

@@ -17,10 +17,7 @@ const jsonLd = {
       jobTitle: "SEO Specialist",
       description:
         "SEO and Content Optimization Specialist with expertise in SEO Strategy, Technical SEO, Content Marketing, and AI Automation.",
-      sameAs: [
-        "https://www.linkedin.com/in/gulman-azkiya/",
-        "https://github.com/gulman",
-      ],
+      sameAs: ["https://www.linkedin.com/in/gulman-azkiya/", "https://github.com/gulman"],
       worksFor: {
         "@type": "Organization",
         name: "Floothink Digital Agency",
@@ -41,8 +38,7 @@ const jsonLd = {
       "@id": "https://gulman.dev/#website",
       name: "Gulman Azkiya — SEO & Content Specialist",
       url: "https://gulman.dev",
-      description:
-        "Personal portfolio of Gulman Azkiya, SEO and Content Optimization Specialist.",
+      description: "Personal portfolio of Gulman Azkiya, SEO and Content Optimization Specialist.",
       author: {
         "@id": "https://gulman.dev/#person",
       },

@@ -4,8 +4,14 @@ import WindowTitleBar from "@/components/WindowTitleBar.vue";
 import aboutAvatar from "@/assets/gulman-azkiya-profile.jpg";
 
 const skills = [
-  "SEO", "Content Strategy", "Keyword Research", "Technical SEO",
-  "Analytics", "Link Building", "n8n", "AI Automation",
+  "SEO",
+  "Content Strategy",
+  "Keyword Research",
+  "Technical SEO",
+  "Analytics",
+  "Link Building",
+  "n8n",
+  "AI Automation",
 ];
 
 const experience = [
@@ -47,10 +53,14 @@ const experience = [
         <div>
           <h1 class="font-pixel text-2xl uppercase md:text-4xl">About Me</h1>
           <p class="mt-6 font-mono-retro text-lg text-ink/80">
-            I'm a content & SEO specialist who treats the web like a well-organized desktop — clean structure, sharp typography, and obsessive attention to the details that compound over time.
+            I'm a content & SEO specialist who treats the web like a well-organized desktop — clean
+            structure, sharp typography, and obsessive attention to the details that compound over
+            time.
           </p>
           <p class="mt-4 font-mono-retro text-lg text-ink/80">
-            Over the last several years I've helped startups and editorial teams build organic channels that don't depend on burning cash. I believe in slow, honest growth — the kind that survives algorithm updates.
+            Over the last several years I've helped startups and editorial teams build organic
+            channels that don't depend on burning cash. I believe in slow, honest growth — the kind
+            that survives algorithm updates.
           </p>
         </div>
       </div>

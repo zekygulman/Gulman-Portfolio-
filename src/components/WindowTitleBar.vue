@@ -9,9 +9,13 @@ defineProps<{
 <template>
   <div :class="['border-[3px] border-ink bg-cream', $props.class]">
     <!-- Mac OS title bar -->
-    <div class="flex items-center gap-2 border-b-[3px] border-ink bg-[color:var(--titlebar)] px-2 py-1.5">
+    <div
+      class="flex items-center gap-2 border-b-[3px] border-ink bg-[color:var(--titlebar)] px-2 py-1.5"
+    >
       <!-- Close widget -->
-      <div class="flex h-4 w-5 shrink-0 items-center justify-center border-[2px] border-ink bg-cream">
+      <div
+        class="flex h-4 w-5 shrink-0 items-center justify-center border-[2px] border-ink bg-cream"
+      >
         <div class="h-1 w-2 border-t-[2px] border-ink" />
       </div>
       <!-- Left stripes -->

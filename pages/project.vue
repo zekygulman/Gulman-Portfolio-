@@ -36,13 +36,13 @@ const projects = [
     stack: ["Writing", "Ghost"],
   },
   {
-    name: "BCA Life",
-    desc: "Blog Editor & Coordinator - Successfully helped improve the blog's organic performance through articles produced by +76.70%.",
+    name: "iCar Indonesia Website",
+    desc: "SEO Specialist - Successfully increased the number of keywords in the Top 10 by 45.48% (from 1,284 to 1,868 keywords).",
     stack: ["Tech SEO", "Sheets"],
   },
   {
-    name: "Kount",
-    desc: "Web & SEO Writer - Outreach engine that placed 180+ contextual backlinks at DR 60+.",
+    name: "BCA Life",
+    desc: "Blog Editor & Coordinator - Successfully helped improve the blog's organic performance through articles produced by +76.70%.",
     stack: ["Outreach", "Pitchbox"],
   },
   {
@@ -59,8 +59,7 @@ const projects = [
       <div class="p-6 md:p-10">
         <h1 class="font-pixel text-2xl uppercase md:text-4xl">Selected Work</h1>
         <p class="mt-4 max-w-2xl font-mono-retro text-lg text-ink/80">
-          A small archive of projects — each one a window into a different
-          problem.
+          A small archive of projects — each one a window into a different problem.
         </p>
       </div>
     </AppWindowTitleBar>
@@ -72,11 +71,7 @@ const projects = [
       class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
       aria-label="Project portfolio"
     >
-      <AppWindowTitleBar
-        v-for="project in projects"
-        :key="project.name"
-        :title="project.name"
-      >
+      <AppWindowTitleBar v-for="project in projects" :key="project.name" :title="project.name">
         <div class="flex flex-col gap-4 p-4">
           <!-- Placeholder pattern -->
           <div

@@ -21,13 +21,13 @@ const projects = [
     stack: ["Writing", "Ghost"],
   },
   {
-    name: "BCA Life",
-    desc: "Blog Editor & Coordinator - Successfully helped improve the blog's organic performance through articles produced by +76.70%.",
+    name: "iCar Indonesia Website",
+    desc: "SEO Specialist - Successfully increased the number of keywords in the Top 10 by 45.48% (from 1,284 to 1,868 keywords).",
     stack: ["Tech SEO", "Sheets"],
   },
   {
-    name: "Kount",
-    desc: "Web & SEO Writer - Outreach engine that placed 180+ contextual backlinks at DR 60+.",
+    name: "BCA Life",
+    desc: "Blog Editor & Coordinator - Successfully helped improve the blog's organic performance through articles produced by +76.70%.",
     stack: ["Outreach", "Pitchbox"],
   },
   {
@@ -59,7 +59,11 @@ const projects = [
           <div
             class="aspect-[4/3] w-full border-[2px] border-ink"
             style="
-              background-image: repeating-linear-gradient(45deg, #1a1a1a 0 2px, transparent 2px 8px);
+              background-image: repeating-linear-gradient(
+                45deg,
+                #1a1a1a 0 2px,
+                transparent 2px 8px
+              );
               background-color: #eceff3;
             "
             aria-hidden="true"

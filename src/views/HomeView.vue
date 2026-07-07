@@ -8,20 +8,45 @@ import heroImage from "@/assets/seo-specialist-gulman.jpg";
 useHead({
   title: "Home — Retro Mac Portfolio",
   meta: [
-    { name: "description", content: "Personal portfolio in a retro Macintosh / Pixel OS aesthetic. SEO and content optimization specialist." },
+    {
+      name: "description",
+      content:
+        "Personal portfolio in a retro Macintosh / Pixel OS aesthetic. SEO and content optimization specialist.",
+    },
     { property: "og:title", content: "Home — Retro Mac Portfolio" },
-    { property: "og:description", content: "Personal portfolio in a retro Macintosh / Pixel OS aesthetic." },
+    {
+      property: "og:description",
+      content: "Personal portfolio in a retro Macintosh / Pixel OS aesthetic.",
+    },
   ],
 });
 
 const features = [
-  { Icon: Search, title: "SEO Strategy", desc: "Keyword research, on-page SEO, and technical optimization." },
-  { Icon: FileText, title: "Content Optimization", desc: "Crafting and optimizing content that ranks and engages." },
-  { Icon: BarChart3, title: "Performance Analysis", desc: "Data-driven insights to improve rankings and measure growth." },
-  { Icon: Crosshair, title: "Ongoing Support", desc: "Continuous optimization and support to stay ahead of the competition." },
+  {
+    Icon: Search,
+    title: "SEO Strategy",
+    desc: "Keyword research, on-page SEO, and technical optimization.",
+  },
+  {
+    Icon: FileText,
+    title: "Content Optimization",
+    desc: "Crafting and optimizing content that ranks and engages.",
+  },
+  {
+    Icon: BarChart3,
+    title: "Performance Analysis",
+    desc: "Data-driven insights to improve rankings and measure growth.",
+  },
+  {
+    Icon: Crosshair,
+    title: "Ongoing Support",
+    desc: "Continuous optimization and support to stay ahead of the competition.",
+  },
 ];
 
-function useHead(_opts: object) { /* client-side head management placeholder */ }
+function useHead(_opts: object) {
+  /* client-side head management placeholder */
+}
 </script>
 
 <template>
@@ -43,7 +68,9 @@ function useHead(_opts: object) { /* client-side head management placeholder */ 
         style="min-height: 420px; max-width: 580px"
       >
         <!-- Badge -->
-        <span class="inline-flex w-fit items-center bg-ink px-3 py-[5px] font-mono-retro text-sm leading-none text-white">
+        <span
+          class="inline-flex w-fit items-center bg-ink px-3 py-[5px] font-mono-retro text-sm leading-none text-white"
+        >
           Hello, I'm
         </span>
 
@@ -56,7 +83,10 @@ function useHead(_opts: object) { /* client-side head management placeholder */ 
         </h1>
 
         <!-- Description -->
-        <p class="mt-4 font-mono-retro leading-relaxed text-ink" style="font-size: 0.95rem; max-width: 34ch">
+        <p
+          class="mt-4 font-mono-retro leading-relaxed text-ink"
+          style="font-size: 0.95rem; max-width: 34ch"
+        >
           Helping brands improve visibility,<br />
           drive organic traffic, and grow through<br />
           strategic SEO and high-value content.
@@ -79,7 +109,9 @@ function useHead(_opts: object) { /* client-side head management placeholder */ 
     <hr class="my-12 border-t-[2px] border-ink" />
 
     <!-- ── Features Grid ── -->
-    <section class="grid grid-cols-1 divide-y-[2px] divide-ink border-y-0 sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x-[2px]">
+    <section
+      class="grid grid-cols-1 divide-y-[2px] divide-ink border-y-0 sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x-[2px]"
+    >
       <div
         v-for="(feature, i) in features"
         :key="feature.title"

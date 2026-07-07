@@ -38,19 +38,19 @@
 :root {
   --radius: 0;
   /* comfortable white background #ECEFF3, ink #1A1A1A */
-  --background: oklch(0.943 0.009 256.0);
+  --background: oklch(0.943 0.009 256);
   --foreground: oklch(0.18 0 0);
-  --card: oklch(0.943 0.009 256.0);
+  --card: oklch(0.943 0.009 256);
   --card-foreground: oklch(0.18 0 0);
-  --popover: oklch(0.943 0.009 256.0);
+  --popover: oklch(0.943 0.009 256);
   --popover-foreground: oklch(0.18 0 0);
   --primary: oklch(0.18 0 0);
   --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.908 0.009 256.0);
+  --secondary: oklch(0.908 0.009 256);
   --secondary-foreground: oklch(0.18 0 0);
   --muted: oklch(0.873 0.012 256.1);
   --muted-foreground: oklch(0.4 0 0);
-  --accent: oklch(0.908 0.009 256.0);
+  --accent: oklch(0.908 0.009 256);
   --accent-foreground: oklch(0.18 0 0);
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
@@ -62,19 +62,19 @@
 
 .dark {
   /* Site is single-theme retro comfortable white; mirror :root */
-  --background: oklch(0.943 0.009 256.0);
+  --background: oklch(0.943 0.009 256);
   --foreground: oklch(0.18 0 0);
-  --card: oklch(0.943 0.009 256.0);
+  --card: oklch(0.943 0.009 256);
   --card-foreground: oklch(0.18 0 0);
-  --popover: oklch(0.943 0.009 256.0);
+  --popover: oklch(0.943 0.009 256);
   --popover-foreground: oklch(0.18 0 0);
   --primary: oklch(0.18 0 0);
   --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.908 0.009 256.0);
+  --secondary: oklch(0.908 0.009 256);
   --secondary-foreground: oklch(0.18 0 0);
   --muted: oklch(0.873 0.012 256.1);
   --muted-foreground: oklch(0.4 0 0);
-  --accent: oklch(0.908 0.009 256.0);
+  --accent: oklch(0.908 0.009 256);
   --accent-foreground: oklch(0.18 0 0);
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
@@ -97,7 +97,12 @@
     line-height: 1.5;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-pixel);
     text-transform: uppercase;
     letter-spacing: 0.02em;
@@ -106,17 +111,29 @@
 }
 
 @layer utilities {
-  .font-pixel { font-family: var(--font-pixel); }
-  .font-mono-retro { font-family: var(--font-mono); }
-  .border-ink { border-color: #1A1A1A; }
-  .bg-cream { background-color: #ECEFF3; }
-  .bg-ink { background-color: #1A1A1A; }
-  .text-ink { color: #1A1A1A; }
+  .font-pixel {
+    font-family: var(--font-pixel);
+  }
+  .font-mono-retro {
+    font-family: var(--font-mono);
+  }
+  .border-ink {
+    border-color: #1a1a1a;
+  }
+  .bg-cream {
+    background-color: #eceff3;
+  }
+  .bg-ink {
+    background-color: #1a1a1a;
+  }
+  .text-ink {
+    color: #1a1a1a;
+  }
   .titlebar-stripes {
     background-image: repeating-linear-gradient(
       to bottom,
-      #1A1A1A 0,
-      #1A1A1A 2px,
+      #1a1a1a 0,
+      #1a1a1a 2px,
       transparent 2px,
       transparent 5px
     );

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { RouterLink, useLink } from "vue-router";
+import { RouterLink } from "vue-router";
 import { ChevronDown, Menu, X } from "lucide-vue-next";
 
 const open = ref(false);
@@ -48,8 +48,8 @@ const links = [
       <button
         type="button"
         aria-label="Toggle menu"
-        @click="open = !open"
         class="inline-flex h-10 w-10 items-center justify-center border-[2px] border-ink bg-cream md:hidden"
+        @click="open = !open"
       >
         <X v-if="open" class="h-5 w-5" />
         <Menu v-else class="h-5 w-5" />
@@ -62,10 +62,10 @@ const links = [
         <li v-for="link in links" :key="link.to" class="border-b-[2px] border-ink last:border-b-0">
           <RouterLink
             :to="link.to"
-            @click="open = false"
             class="block px-4 py-3 font-mono-retro text-lg text-ink"
             active-class="bg-ink text-white"
             :exact="link.to === '/'"
+            @click="open = false"
           >
             {{ link.label }}
           </RouterLink>

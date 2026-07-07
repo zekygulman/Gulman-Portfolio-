@@ -50,9 +50,7 @@ const experience = [
 <template>
   <AppPageShell>
     <AppWindowTitleBar title="about.sys">
-      <div
-        class="grid grid-cols-1 gap-8 p-6 md:grid-cols-[260px_1fr] md:gap-10 md:p-10"
-      >
+      <div class="grid grid-cols-1 gap-8 p-6 md:grid-cols-[260px_1fr] md:gap-10 md:p-10">
         <!-- Avatar -->
         <div class="border-[3px] border-ink bg-cream p-3">
           <NuxtImg
@@ -70,14 +68,14 @@ const experience = [
         <div>
           <h1 class="font-pixel text-2xl uppercase md:text-4xl">About Me</h1>
           <p class="mt-6 font-mono-retro text-lg text-ink/80">
-            I'm a content & SEO specialist who treats the web like a
-            well-organized desktop — clean structure, sharp typography, and
-            obsessive attention to the details that compound over time.
+            I'm a content & SEO specialist who treats the web like a well-organized desktop — clean
+            structure, sharp typography, and obsessive attention to the details that compound over
+            time.
           </p>
           <p class="mt-4 font-mono-retro text-lg text-ink/80">
-            Over the last several years I've helped startups and editorial teams
-            build organic channels that don't depend on burning cash. I believe
-            in slow, honest growth — the kind that survives algorithm updates.
+            Over the last several years I've helped startups and editorial teams build organic
+            channels that don't depend on burning cash. I believe in slow, honest growth — the kind
+            that survives algorithm updates.
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   // ── Modules ──────────────────────────────────────────────────────
-  modules: ["@nuxt/image", "@nuxtjs/sitemap", "@nuxtjs/robots"],
+  modules: ["@nuxt/image", "@nuxtjs/sitemap", "@nuxtjs/robots", "@nuxt/eslint"],
 
   // ── Static Site Generation (SSG) ─────────────────────────────────
   nitro: {
@@ -70,6 +70,7 @@ export default defineNuxtConfig({
       lg: 1024,
       xl: 1280,
       "2xl": 1536,
+      xxl: 1920,
     },
   },
 
@@ -89,6 +90,10 @@ export default defineNuxtConfig({
       },
     ],
     sitemap: ["https://gulman.dev/sitemap.xml"],
+  },
+
+  site: {
+    url: "https://gulman.dev",
   },
 
   // ── Runtime Config ───────────────────────────────────────────────

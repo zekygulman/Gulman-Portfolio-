@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import { ChevronRight, Search, FileText, BarChart3, Crosshair } from "lucide-vue-next";
 
+const img = useImage();
+
+// Generate optimized responsive attributes for preload matching the NuxtImg component
+const heroImageSizes = img.getSizes("/seo-specialist-gulman.jpg", {
+  sizes: "100vw xs:320px sm:640px md:768px lg:1024px xl:1280px xxl:1920px",
+  modifiers: {
+    quality: 80,
+  },
+});
+
 // ── SEO ──────────────────────────────────────────────────────────────
 useSeoMeta({
   title: "Gulman Azkiya — SEO & Content Optimization Specialist",
@@ -13,8 +23,7 @@ useSeoMeta({
   ogImage: "https://gulman.dev/seo-specialist-gulman.jpg",
   twitterCard: "summary_large_image",
   twitterTitle: "Gulman Azkiya — SEO & Content Specialist",
-  twitterDescription:
-    "Portfolio of Gulman Azkiya, SEO and Content Optimization Specialist.",
+  twitterDescription: "Portfolio of Gulman Azkiya, SEO and Content Optimization Specialist.",
   twitterImage: "https://gulman.dev/seo-specialist-gulman.jpg",
 });
 
@@ -25,10 +34,13 @@ useHead({
       href: "https://gulman.dev/",
     },
     {
-      // Preload hero image for faster LCP
+      // Preload responsive hero image for faster LCP matching the NuxtImg configuration
       rel: "preload",
       as: "image",
-      href: "/seo-specialist-gulman.jpg",
+      href: heroImageSizes.src,
+      imagesrcset: heroImageSizes.srcset,
+      imagesizes: heroImageSizes.sizes,
+      fetchpriority: "high",
     },
   ],
 });
@@ -67,16 +79,15 @@ const features = [
       style="min-height: 420px"
       aria-label="Hero section — Gulman Azkiya SEO Specialist"
     >
-      <!-- Full-bleed hero image (NuxtImg for WebP + optimization) -->
+      <!-- Full-bleed hero image (NuxtImg for optimized delivery) -->
       <NuxtImg
         src="/seo-specialist-gulman.jpg"
         alt="Gulman Azkiya — SEO and Content Optimization Specialist, retro Mac desktop with analytics tools"
         class="absolute inset-0 h-full w-full object-cover object-right"
         width="1920"
-        height="1080"
-        format="webp"
+        height="675"
         quality="80"
-        sizes="100vw"
+        sizes="100vw xs:320px sm:640px md:768px lg:1024px xl:1280px xxl:1920px"
         loading="eager"
         fetchpriority="high"
       />
@@ -142,9 +153,7 @@ const features = [
           i % 2 === 0 ? 'sm:border-r-[2px] sm:border-ink lg:border-r-0' : '',
         ]"
       >
-        <div
-          class="flex h-10 w-10 shrink-0 items-center justify-center border-[2px] border-ink"
-        >
+        <div class="flex h-10 w-10 shrink-0 items-center justify-center border-[2px] border-ink">
           <component :is="feature.Icon" class="h-5 w-5" :stroke-width="2" />
         </div>
         <div>

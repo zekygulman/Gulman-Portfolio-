@@ -5,7 +5,7 @@ withDefaults(
     type?: "button" | "submit" | "reset";
     class?: string;
   }>(),
-  { variant: "primary", type: "button", class: "" }
+  { variant: "primary", type: "button", class: "" },
 );
 
 defineEmits<{ click: [e: MouseEvent] }>();

@@ -1,20 +1,9 @@
-import js from "@eslint/js";
-import globals from "globals";
-import pluginVue from "eslint-plugin-vue";
-import prettier from "eslint-plugin-prettier";
-import eslintConfigPrettier from "eslint-config-prettier";
+import withNuxt from "./.nuxt/eslint.config.mjs";
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
-export default [
-  js.configs.recommended,
-  ...pluginVue.configs["flat/recommended"],
-  eslintConfigPrettier,
+export default withNuxt([
+  eslintPluginPrettierRecommended,
   {
-    plugins: { prettier },
-    languageOptions: {
-      globals: { ...globals.browser, ...globals.node },
-      ecmaVersion: 2022,
-      sourceType: "module",
-    },
     rules: {
       "prettier/prettier": "warn",
       "vue/multi-word-component-names": "off",
@@ -23,4 +12,4 @@ export default [
   {
     ignores: ["dist/", "node_modules/", "*.d.ts"],
   },
-];
+]);
