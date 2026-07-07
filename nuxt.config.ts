@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     prerender: {
       routes: ["/", "/about", "/project", "/contact"],
       crawlLinks: true,
+      ignore: ["/_vercel/image"],
     },
   },
 
