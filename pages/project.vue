@@ -93,7 +93,9 @@ const projects = [
       <AppWindowTitleBar v-for="project in projects" :key="project.name" :title="project.name">
         <div class="flex flex-col gap-4 p-4">
           <!-- Project Image with Retro Border -->
-          <div class="aspect-[4/3] w-full border-[2px] border-ink overflow-hidden flex items-center justify-center bg-zinc-100">
+          <div
+            class="aspect-[4/3] w-full border-[2px] border-ink overflow-hidden flex items-center justify-center bg-zinc-100"
+          >
             <NuxtImg
               v-if="project.image"
               :src="project.image"

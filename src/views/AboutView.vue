@@ -53,14 +53,15 @@ const experience = [
         <div>
           <h1 class="font-pixel text-2xl uppercase md:text-4xl">About Me</h1>
           <p class="mt-6 font-mono-retro text-lg text-ink/80">
-            I'm a content & SEO specialist who treats the web like a well-organized desktop — clean
-            structure, sharp typography, and obsessive attention to the details that compound over
-            time.
+            Dedicated SEO Professional specializing in Content Strategy and On-page Optimization to
+            maximize audience relevance. Experienced in agency environments, adept at using
+            Technical SEO Audits to maintain excellent website performance and ensure content is
+            optimized for search and AI visibility.
           </p>
           <p class="mt-4 font-mono-retro text-lg text-ink/80">
-            Over the last several years I've helped startups and editorial teams build organic
-            channels that don't depend on burning cash. I believe in slow, honest growth — the kind
-            that survives algorithm updates.
+            Leverages essential tools (GA, Ahrefs, Semrush) to execute keyword research and generate
+            actionable insights. Possesses strong communication skills, a proactive mindset, and
+            excellent teamwork abilities.
           </p>
         </div>
       </div>
