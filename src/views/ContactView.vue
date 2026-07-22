@@ -2,7 +2,7 @@
 import { Mail, Linkedin, ChevronRight } from "lucide-vue-next";
 import PageShell from "@/components/PageShell.vue";
 import WindowTitleBar from "@/components/WindowTitleBar.vue";
-import computerLetsConnect from "@/assets/computer-lets-connect.jpg";
+import computerContactGulman from "@/assets/computer-contact-gulman.jpg";
 
 // ── Social links (3 only, no Instagram) ──────────────────────────────
 const socials = [
@@ -82,7 +82,7 @@ const socials = [
       <WindowTitleBar title="hello.app">
         <div class="bg-cream p-3">
           <img
-            :src="computerLetsConnect"
+            :src="computerContactGulman"
             alt="Pixel art computer with 'Let's connect!' message"
             width="1254"
             height="1254"

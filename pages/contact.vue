@@ -10,7 +10,7 @@ useSeoMeta({
   ogDescription:
     "Have a project or question? Drop a line to Gulman Azkiya, SEO and Content Optimization Specialist.",
   ogUrl: "https://gulman.dev/contact",
-  ogImage: "https://gulman.dev/computer-lets-connect.jpg",
+  ogImage: "https://gulman.dev/computer-contact-gulman.jpg",
   twitterCard: "summary_large_image",
 });
 
@@ -96,7 +96,7 @@ const socials = [
       <AppWindowTitleBar title="hello.app">
         <div class="bg-cream p-3">
           <NuxtImg
-            src="/computer-lets-connect.jpg"
+            src="/computer-contact-gulman.jpg"
             alt="Pixel art computer with 'Let's connect!' message"
             width="1254"
             height="1254"
